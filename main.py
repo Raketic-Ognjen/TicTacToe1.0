@@ -101,7 +101,7 @@ def game(turn,count):
                     for key in board_keys:
                         theBoard[key] = " "
 
-                    game(turn,count)
+                    game()
                     turn = 'X'
                     count = 0
 game('X',0)
