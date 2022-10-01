@@ -24,9 +24,7 @@ def printBoard(board):
 
 # 3rd step: main function which has all game func
 
-def game():
-    turn = 'X'
-    count = 0
+def game(turn,count):
 
     for i in range(10):
         printBoard(theBoard)
@@ -103,4 +101,7 @@ def game():
                     for key in board_keys:
                         theBoard[key] = " "
 
-                    game()
+                    game(turn,count)
+                    turn = 'X'
+                    count = 0
+game('X',0)
